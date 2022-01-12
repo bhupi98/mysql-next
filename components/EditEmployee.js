@@ -19,7 +19,7 @@ function EditEmployee({ employeeUpdateData }) {
   const onSubmit = async (e) => {
     e.preventDefault();
     let data = await axios.put(
-      `https://mysql-next.vercel.app/api/employee/${employeeUpdateData[0].emp_id}`,
+      `http://localhost:3000/api/employee/${employeeUpdateData[0].emp_id}`,
       addEmployee
     );
     if (data.data) router.push("/employees");
