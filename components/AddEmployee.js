@@ -15,7 +15,7 @@ function AddEmployee() {
   const onSubmit = async (e) => {
     e.preventDefault();
     let data = await axios.post(
-      `http://localhost:3000/api/employee`,
+      `https://mysql-next.vercel.app/api/employee`,
       addEmployee
     );
     if (data.data) router.push("/employees");

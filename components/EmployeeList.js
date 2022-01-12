@@ -7,7 +7,9 @@ import axios from "axios";
 function EmployeeList({ employeeData }) {
   const router = useRouter();
   const deleteEmployee = async (id) => {
-    let data = await axios.delete(`http://localhost:3000/api/employee/${id}`);
+    let data = await axios.delete(
+      `https://mysql-next.vercel.app/api/employee/${id}`
+    );
     router.push("/employees");
   };
   return (

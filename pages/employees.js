@@ -9,7 +9,7 @@ function employees({ data }) {
 }
 
 export async function getServerSideProps() {
-  const res = await fetch("http://localhost:3000/api/employee");
+  const res = await fetch("https://mysql-next.vercel.app/api/employee");
   const data = await res.json();
   return {
     props: { data },
