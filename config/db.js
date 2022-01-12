@@ -9,10 +9,10 @@ const mysql = require("serverless-mysql")();
 // });
 
 mysql.config({
-  host: process.env.fhfhf,
-  database: process.env.DB_NAME,
-  user: process.env.DB_USER,
-  password: process.env.DB_PASS,
+  host: "localhost",
+  database: "data",
+  user: "root",
+  password: "India@100",
 });
 
 // pool.getConnection((err) => {
