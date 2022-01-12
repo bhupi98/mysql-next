@@ -1,0 +1,16 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #228be6;
+  font-family: "Roboto Condensed", sans-serif;
+}
+.ul {
+  list-style-type: none;
+}
+
+.li {
+  display: inline-block;
+  padding: 0 15px;
+}
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;1,300&display=swap");
