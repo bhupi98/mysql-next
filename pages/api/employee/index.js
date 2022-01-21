@@ -4,7 +4,6 @@ import {
   getAllEmployees,
   saveEmployee,
 } from "../../../controller/employee/employee";
-
 const handler = nc(onError);
 handler.get(getAllEmployees);
 handler.post(saveEmployee);
